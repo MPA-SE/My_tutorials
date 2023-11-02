@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <!--I may later rename this file INDEX.HTML, so it can be launched.
 Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
-<div>
+<div class="Using header tags">
     <h1>
         This is the main header
     </h1>
     <p>
-        Header one tag<h1></h1> creates a main header.
+        Header one tag creates a main header.
     </p>
     <h2>
         This is the first subheading
     </h2>
     <p>
-        Header two<h2></h2> tag creates a subheading.
+        Header two tag creates a subheading.
     </p>
     <h3>
         This is the second subheading
     </h3>
     <p>
-        Header three tag<h3></h3> creates yet another subheading 
+        Header three tag creates yet another subheading 
         and we can keep going like this till h6!
     </p>
 </div>
 
-<div>
+<div class="Using Images">
     <h1>
         WHAT DOES HTML FEEL LIKE?
     </h1>
     <img src="https://unsplash.it/600/400?image=501" alt="picture at the waterside"/>
 </div>
-<h3>
+<h3 class="Using unordered lists">
     So what have I learnt so far?
 </h3>
     <p>HTML tags like:</p>
@@ -43,9 +43,10 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
         <li>anchor tag</li>
         <li>Input tags</li>
         <li>Form tags</li>
-	<li>table tag</li>
-	<li>marquee tag</li>
-	<li>break tag</li>
+	    <li>table tag</li>
+	    <li>marquee tag</li>
+	    <li>break tag</li>
+        <li>section/nav/article tag: they're same as division tag</li>
     </ul>
     <!--there are some self-closing tags like: img tag, input tag, break tag-->
     <p>Attributes, Classes and IDS</p>
@@ -55,18 +56,18 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
     </p>
 </div>
 <div>
-    <h4>OBSERVATIONS</h4>
+    <h4 class="Using ordered lists">OBSERVATIONS</h4>
     <ol>
         <li>What observations do you have about this repository?</li>
         <li>Do you have any questions?</li>
     </ol>
     <p>Please type your answers in here:</p>
-    <textarea></textarea>
+    <textarea class="Receiving long text input"></textarea>
 </div>
 <div>
 <h4>GETTING TO KNOW OTHER DEVELOPERS</h4>
-    <p>From what continent are you reading my repository?</p>
-    <select>
+    <p class="Using paragragh tag">From what continent are you reading my repository?</p>
+    <select class="Creating dropdown options">
         <option value="North America">North America</option>
         <option value="South America">South America</option>
         <option value="Europe">Europe</option>
@@ -76,23 +77,23 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
         <option value="Antartica">Antartica</option>
     </select>
     <p>What is your name?</p>
-    <input type="text">
+    <input type="text" class="Receiving short text input">
     <p>What is your favourite colour?</p>
-    <input type="colour">
+    <input type="colour" class="Receiving colour input">
     <p>upload a picture of yourself</p>
-    <input type="file">
+    <input type="file" class="Receiving file uploads">
     <p>At what date and time are you reading this repository?</p>
-    <input type="datetime-local">
+    <input type="datetime-local" class="Receiving date&time input">
     <p>You can upload the following form on your own repository too,
         to get to know people that read them more intimately:
     </p>
-    <form>
+    <form class="Creating form with placeholders">
         <input placeholder="Full Names">
         <input placeholder="Favourite Colour">
         <input placeholder="Nationality">
     </form>
 </div>
-<div>
+<div class="Creating a table">
 	<h4>GETTING TO KNOW ME</h4>
 	<table>
 	<thead>
@@ -115,7 +116,7 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
         </p>
         <marquee>If this text is moving on your screen, then the marquee tag works on your browser</marquee>
 </div>
-<div>
+<div class="Using anchor tag for links">
     <p>I learnt to write all these codes from <button>Frontend Masters</button></p>
     <a href="https://www.frontendmasters.com"> Find them here</a>
     <!--a tags can nest anything in including an image and then it becomes a link
