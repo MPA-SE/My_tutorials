@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <!--I may later rename this file INDEX.HTML, so it can be launched.
 Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
-<div class="Using header tags">
+<html lang="en">
+<head class="Contains-meta-tags">
+    <!--Even though I have decided to leave this file as my practice file
+    and create another (index.html), I will put in the head and meta tags: 
+which contain what is basically needed for the web to run on the browser-->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!--The line above is not compulsory. It was created for microsoft edge
+and now microsoft edge is getting more compatible-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY HTML PRACTICE BLOG</title>
+</head>
+<!--I don't need to know by heart the head and meta tags.
+I just need to ensure my VS Code is on HTML and type:HTML 5, then TAB-->
+<body>
+<div class="Using-header-tags">
     <h1>
         This is the main header
     </h1>
@@ -23,13 +38,13 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
     </p>
 </div>
 
-<div class="Using Images">
+<div class="Using-Images">
     <h1>
         WHAT DOES HTML FEEL LIKE?
     </h1>
     <img src="https://unsplash.it/600/400?image=501" alt="picture at the waterside"/>
 </div>
-<h3 class="Using unordered lists">
+<h3 class="Using-unordered-lists">
     So what have I learnt so far?
 </h3>
     <p>HTML tags like:</p>
@@ -47,27 +62,30 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
 	    <li>marquee tag</li>
 	    <li>break tag</li>
         <li>section/nav/article tag: they're same as division tag</li>
+        <li>Head,meta, html and body tags</li>
     </ul>
     <!--there are some self-closing tags like: img tag, input tag, break tag-->
     <p>Attributes, Classes and IDS</p>
-    <p>Attributes define the behaviours of tags. Classes will make more sense when learning CSS
+    <p>Attributes define the behaviors of tags. Classes will make more sense when learning CSS
         for now I understand that they help me define what type of tag I am using and they are reusable.
         IDS on the other hand are not reusable. They are unique.
     </p>
+    <!--I also just learnt that it is common practice is to put hyphens in between
+    class attributes; and so I did-->
 </div>
 <div>
-    <h4 class="Using ordered lists">OBSERVATIONS</h4>
+    <h4 class="Using-ordered-lists">OBSERVATIONS</h4>
     <ol>
         <li>What observations do you have about this repository?</li>
         <li>Do you have any questions?</li>
     </ol>
     <p>Please type your answers in here:</p>
-    <textarea class="Receiving long text input"></textarea>
+    <textarea class="Receiving-long-text-input"></textarea>
 </div>
 <div>
 <h4>GETTING TO KNOW OTHER DEVELOPERS</h4>
-    <p class="Using paragragh tag">From what continent are you reading my repository?</p>
-    <select class="Creating dropdown options">
+    <p class="Using-paragragh-tag">From what continent are you reading my repository?</p>
+    <select class="Creating-dropdown-options">
         <option value="North America">North America</option>
         <option value="South America">South America</option>
         <option value="Europe">Europe</option>
@@ -77,23 +95,23 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
         <option value="Antartica">Antartica</option>
     </select>
     <p>What is your name?</p>
-    <input type="text" class="Receiving short text input">
+    <input type="text" class="Receiving-short-text-input">
     <p>What is your favourite colour?</p>
-    <input type="colour" class="Receiving colour input">
+    <input type="colour" class="Receiving-colour-input">
     <p>upload a picture of yourself</p>
-    <input type="file" class="Receiving file uploads">
+    <input type="file" class="Receiving-file-uploads">
     <p>At what date and time are you reading this repository?</p>
-    <input type="datetime-local" class="Receiving date&time input">
+    <input type="datetime-local" class="Receiving-date&time-input">
     <p>You can upload the following form on your own repository too,
         to get to know people that read them more intimately:
     </p>
-    <form class="Creating form with placeholders">
+    <form class="Creating-form-with-placeholders">
         <input placeholder="Full Names">
         <input placeholder="Favourite Colour">
         <input placeholder="Nationality">
     </form>
 </div>
-<div class="Creating a table">
+<div class="Creating-a-table">
 	<h4>GETTING TO KNOW ME</h4>
 	<table>
 	<thead>
@@ -116,10 +134,12 @@ Is "launched" the right terminology? I don't know. I'm just learning. LOL-->
         </p>
         <marquee>If this text is moving on your screen, then the marquee tag works on your browser</marquee>
 </div>
-<div class="Using anchor tag for links">
+<div class="Using-anchor-tag-for-links">
     <p>I learnt to write all these codes from <button>Frontend Masters</button></p>
     <a href="https://www.frontendmasters.com"> Find them here</a>
     <!--a tags can nest anything in including an image and then it becomes a link
     that leads somewhere-->
     <p>All thanks to my mentor: Uncle Mark!</p>
 </div>
+</body>
+</html>
