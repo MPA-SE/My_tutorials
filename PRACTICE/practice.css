@@ -1,0 +1,53 @@
+.Using-header-tags {
+    color: red;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
+.Using-unordered-lists {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+}
+
+.Using-ordered-lists {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+    
+}
+
+.Using-paragragh-tag {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+}
+
+.Receiving-short-text-input {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+}
+
+.Receiving-long-text-input {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+}
+
+.Receiving-colour-input {
+    color: beige;
+    font-size: small;
+    font-weight: lighter;
+    text-decoration: solid;
+}
+
+.Receiving-date&time-input {
+    
+}
