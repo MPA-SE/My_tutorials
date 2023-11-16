@@ -1,0 +1,49 @@
+h1 {
+    font-family: Helvetica;
+    color: red;
+    font-size: 50px;
+    text-align:right;
+}
+
+h2 {
+    font-family: Monaco;
+    color: seagreen;
+    font-size: 40px;
+    border: 9px dotted gray;
+    text-align:center;
+}
+
+h4 {
+    font-family: Comic sans MS;
+    font-size: 30px;
+    text-align: center;
+    color: seagreen
+}
+
+p {
+    font-family: Comic sans MS;
+    font-size: 20px;
+    color: black;
+}
+
+div {
+    color: blue;
+}
+
+span {
+    color: yellow;
+    text-decoration: underline;
+    font-size: italic;
+}
+
+ol {
+    list-style: upper-roman;
+}
+
+ul{
+    list-style: square;
+}
+
+li {
+    color: brown;
+}
