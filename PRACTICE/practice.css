@@ -1,3 +1,10 @@
+h1 {
+    text-align: center;
+    font-size: larger;
+    display:block;
+    font-weight: 400;
+}
+
 .Using-header-tags {
     color: red;
     font-size: medium;
@@ -5,15 +12,24 @@
     text-decoration: wavy;
 }
 
+.Using-header-tags::after {
+    /* This "::after" above is a pseudo-element*/
+    content:"LET'S BEGIN!";
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    text-decoration: wavy;
+}
+
 .Using-unordered-lists {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
 }
 
 .Using-ordered-lists {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
@@ -21,33 +37,40 @@
 }
 
 .Using-paragragh-tag {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
 }
 
 .Receiving-short-text-input {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
 }
 
 .Receiving-long-text-input {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
 }
 
 .Receiving-colour-input {
-    color: beige;
+    color: blue;
     font-size: small;
     font-weight: lighter;
     text-decoration: solid;
 }
 
-.Receiving-date&time-input {
-    
-}
+/* There are many advanced features for cascading- For example; pseudo-classes.It is one way to use selectors...
+So, there are tag selectors, class selectors (which are higher), ID selectors (which are even higher) , 
+!important (which is way higher)..."higher" means MORE SPECIFIC. What wins is specificity.
+There is also pseudo-elements. For example; those icons/images like a design(FLEURON)
+that  you find at the end of a book chapter.
+ I can go to CSS TRICKS and MDN Reference to learn more. 
+ BTW, this is how to make a comment in CSS*/
+ /* QUESTIONS : 1. I don't understand the css STYLE TAG; how does it work with HTML?
+ 2. How do animations works? Using emojis and what not?
+ Maybe I will get it later */
