@@ -1,0 +1,52 @@
+h1 {
+    font-family: Comic Sans MS;
+    text-align: center;
+    color:blueviolet;
+}
+h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color:blueviolet;
+}
+.picture1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.picture2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.flier-body {
+    background-color: pink;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.flower {
+    width: 50px;
+    height:50px;
+    background-color: #ff69b4;
+    border-radius: 50%;
+    position: absolute;
+    animation: flower 10s linear infinite;
+}
+@keyframes flower {
+    0% {
+        transform: translate(0, 0);
+    }
+    50% {
+        transform: translate(100vw, 100vh);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
