@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More CSS Practice</title>
+</head>
+<body>
+    <!-- Here I shall be exploring styling my CSS differently:
+    Instead of using Tags which will affect both the parent and the children,
+    I will select the classes of the tags. So instead of the CLASS and not the TAG will be my SELECTOR,
+    then I can bring in my properties and values.  -->
+    <!-- So I'm thinking of doing something with FIELDSET and LEGEND tags.
+    First, Let me play with the CSS LAYOUT.-->
+    <h1>MARRIAGE 101</h1>
+    <!-- I just learnt that the SPAN tag is used for 
+    in-line styling! Using it with STYLE="" or CLASSES. HOW COOL!-->
+    <h2><span style="font-style: italic;">Two</span> people meet... </h2>
+    <style>
+        h1 {
+            color:red;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        h2 {
+            color:blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .ex-box {
+            border: 3px solid #aaa;
+            background-color: #eee;
+            height : 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            float: left;
+            margin-right: 10px;
+            border-radius: 5px;
+            color: blue;
+            font-size: 30px;
+        }
+        .ex-box: last-of-type {
+            clear: right;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+    <div class="ex-box">ADI</div>
+    <div class="ex-box">PRISCILLA</div>
+    <div class="clear"></div>
+    <h2>...and become <span style="font-style: italic; font-weight: bolder;">one!</span></h2>
+    <style>
+        .new-ex-box {
+            border: 3px solid #aaa;
+            background-color: #eee;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+    <div class="new-ex-box">ADI&PRISCILLA</div>
+    <!-- I love CSS!!! I need to learn more about fonts
+    and colors though.-->
+
+
+    
+</body>
+</html>
