@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More CSS Practice</title>
 </head>
-<body>
+
     <!-- Here I shall be exploring styling my CSS differently:
     Instead of using Tags which will affect both the parent and the children,
     I will select the classes of the tags. So instead of the CLASS and not the TAG will be my SELECTOR,
@@ -98,18 +98,43 @@
         .floated div {
             float: left;
         }
+        .clearfix::after {
+            content: "TO BE CONTINUED...";
+            clear:both;
+            display: table;
+            color:blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bolder;
+
+        }
     </style>
     <div class="floated">
     <div class="box-1">BABY 1</div>
     <div class="box-2">BABY 2</div>
     <div class="box-3">BABY 3</div>
+    <div class="clearfix"></div>
     </div>  
+
     <!-- We use float to push elements as far left
     or right, as possible; and when there's not enough 
-    space, they move to the next line.-->
+    space, they move to the next line. So they wrap. There is also
+    FLEX: which squishes things. Both FLOAT and FLEX are
+    laid out in the parent. I could show examples above.
+    .clear and .clearfix can help clear the layout, so that
+    I can input text-->
     
-
-
-    
+    <!-- .flex-container class is another layout and .reverse
+    and flex-container reverse will reverse the boxes: 321.
+    and .column will make it into a column. Also column reverse
+    works. We also have .jc-right to justify right and .jc-left
+    and .jc-center then the property will be justify-content.
+    Also .jc-sb with property justify-content and value space-between.
+    Finally .jc-sa (space around) and .jc-se (space evenly).
+    Next is the align-items property which worries about vertical
+    alignment and not horizontal, like the above. .ai-fe with value flex-end
+    and flex-start as the opposite. Then ai-center, ai-stretch ( here if you
+    have defined height, you need to remove it like this .no-height with property 
+    height and value inherit). As for .ai-grow, I gotta try it. There's also
+    flex-wrap for multiple rows and align-self.-->
 </body>
 </html>

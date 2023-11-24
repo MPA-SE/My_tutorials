@@ -1,0 +1,43 @@
+h1 {
+    font-family: Snell Roundhand;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+h2 {
+    font-weight: lighter;
+    text-align: center;
+    font-style: italic;
+}
+.image {
+    width: 80;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul {
+    font-weight: bold;
+    font-family: futura;
+    color: gray;
+}
+/* It's obvious that I'm more used to GRID than FLEX at the moment*/
+.grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* Why does my spacing look weird between items 2 and 3?*/
+    row-gap: 10px;
+    column-gap: 10px;
+    margin:0;
+    padding: 30px;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    border: 3px solid black
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap:10px;
+    column-gap:10px;
+    grid-template-areas: page-header page-header page-header grid grid grid article1 article2 article3 article4 article5;
+}

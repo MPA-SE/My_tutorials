@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONCLUDING CSS TUTORIAL</title>
+</head>
+<body>
+    <h1><span style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: red;">MARRIAGE 102</span></h1>
+    <p>Welcome back. This is a continuation of <a href="http://127.0.0.1:3000/PRACTICE/practice2.html">MARRIAGE 101.</a> Now back to the lesson.
+    CHILDREN HAVE DIFFERENT FLAVOURS/PERSONALITIES...</p>
+    <h2>...even if they're twins!</h2>
+    <!-- The 1fr 1fr will make two pictures stay side by side and if it were 1fr 1fr 1fr
+    it would be 3 pictures side by side. Also if it were 2fr 1fr, it would make the first picture 
+    bigger. Now imagine 1fr 2fr 1fr! so cool. ROW GAP and COLUMN GAP are for the space in between the grid items.
+    CSS TRICKS and MDN help with a lot of info. In addition, caniuse.com tells you if you can use certain elements and what browsers support them.-->
+    <!-- Now let me explain the sorcery I learnt to perform in the grid layout of the personalities.
+    GRID AREA allows you name a section and refer to it later in spelling out the arrangement in the
+    GRID-TEMPLATE-COLUMNS/AREAS.-->
+    <style>
+        h2 {
+            color:blueviolet;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"
+        }
+        .grid {
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        .grid-picture {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            margin:0;
+            padding:0;
+        }
+    </style>
+
+    <div class="grid">
+        <img
+            class="grid-picture"
+            src="/Images/The_twins.jpeg"
+            alt="The Melton twins"/>
+
+        <img
+            class="grid-picture"
+            src="/Images/CHLOE.jpeg"
+            alt="The latest Melton Baby"/>
+    </div>
+    <h2>It can look like this...</h2>
+    <style>
+        .personality-one {
+            grid-area: one;
+            background-color: red;
+            padding:10px;
+        }
+
+        .personality-two {
+            grid-area: two;
+            background-color: blue;
+            padding: 10px;
+        }
+
+        .personality-three {
+            grid-area: three;
+            background-color: green;
+            padding: 10px;
+        }
+
+        .personality-four {
+            grid-area: four;
+            background-color: yellow;
+            padding:10px;
+        }
+
+        .children-personalities {
+            display: grid;
+            grid-template-columns: 2fr 4fr 3fr 10fr;
+            grid-template-areas: "one one one four"
+            "two two . four"
+            "three three three three";
+
+        }
+
+        .children-personalities::after {
+            content: '\1F64F'; /* This is called a Unicode character for the 
+            wink emoji*/
+            font-size: 30px;
+            /* Everything I defined here below this comment is not working.
+            i don't know why. I'm still learning animations. Anyways I could have
+            just put all the values separated by spaces, in the ANIMATION property. It will be long 
+            though. It is perhaps because I did not define how it should work in KEYFRAMES.*/
+            display:inline-block;
+            position: relative;
+            right:0;
+            animation-name: move;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: ease-in;
+
+        }
+
+        @keyframes spin { /* KEYFRAMES allows me define a reusable animation.
+            I could throw SPIN on anything now!*/
+            to { /* TO defines the end state of my animation. if FROM is not 
+                defined, your animation starts from where it is.*/
+                transform: rotate(360deg);
+            }
+        }
+        .spinny-boi {
+            /* ANIMATION is the property for the keyframe; saying:
+            DO WHAT SPIN DEFINES, FOR HALF A SECOND, NEVER STOPPING
+            AND NEVER SLOWING/SPEEDING UP.*/
+            animation: spin 0.5s infinite linear;
+            display: inline-block;
+            font-size: 30px;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+    <div class="spinny-boi">*</div> <!-- This is how CSS ANIMATION
+    works! What a game changer!-->
+    <div class="children-personalities">
+        <div class="clear"></div>
+        <header class="personality-one">Sanguine</header>
+        <div class="personality-two">Phlegmatic</div>
+        <div class="personality-three">Melancholic</div>
+        <footer class="personality-four">Choleric</footer>
+
+    </div>
+    <style>
+        @keyframes rainbow {
+            100%,
+            0% {
+                color: rgb(255, 0, 0);
+            }
+            8% {
+                color: rgb(255, 127, 0);
+            }
+            16% {
+                color: rgb(255, 255, 0);
+            }
+            25% {
+                color: rgb(127, 255, 0);
+            }
+            33% {
+                color: rgb(0, 255, 0);
+            }
+            41% {
+                color:rgb(0, 255, 127);
+            }
+            50% {
+                color: rgb(0, 255, 255);
+            }
+            58% {
+                color: rgb(0, 127, 255);
+            }
+            66% {
+                color: rgb(0, 0, 255);
+            }
+            75% {
+                color: rgb(127, 0, 255);
+            }
+            83% {
+                color: rgb(255, 0, 255);
+            }
+            91% {
+                color: rgb(255, 0, 127);
+            }
+        }
+        .rainbow-boi {
+            animation : rainbow 4s infinite linear;
+            font-size: 20px;
+        }
+    </style>
+    <div class="rainbow-boi">CHILDREN ARE THE GODLY SEED THAT GOD DESIRES FROM MARRIAGE</div>
+    <!-- QUESTIONS-->
+    <!-- How do i reuse an animation?
+    I think I get it. Define it in KEYFRAMES, then call it in the (parent) class-->
+
+</body>
+</html>
