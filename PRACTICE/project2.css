@@ -1,43 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 30px;
+}
+
 h1 {
     font-family: Snell Roundhand;
     text-align: center;
     font-size: 60px;
-    font-weight: lighter;
+    font-weight: normal;
+}
+
+.page-header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.Article1 {
+    grid-area: Article1;
+}
+
+.Article2{
+    grid-area: Article2;
+}
+
+.Article3 {
+    grid-area: Article3;
+}
+
+.Article4 {
+    grid-area: Article4;
+}
+
+.Article5 {
+    grid-area: Article5;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "Article1 Article2 Article3"
+    "Article4 Article5 Article5";
 }
 
 h2 {
-    font-weight: lighter;
+    font-weight: normal;
     text-align: center;
     font-style: italic;
+    font-size: 30px;
 }
+
 .image {
-    width: 80;
-    margin-left: auto;
-    margin-right: auto;
+    display:block;
+    margin: 0 auto;
+    max-height: 250px;
 }
-ul {
-    font-weight: bold;
-    font-family: futura;
-    color: gray;
+
+.article {
+    padding: 10px;
+    border-left: 3px solid black;
+    border-bottom: 3px solid black;
 }
-/* It's obvious that I'm more used to GRID than FLEX at the moment*/
-.grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    /* Why does my spacing look weird between items 2 and 3?*/
-    row-gap: 10px;
-    column-gap: 10px;
-    margin:0;
-    padding: 30px;
-    list-style: none;
-    align-items: center;
+
+.Article3, .Article5 {
+    border-right: 3px solid black;
+}
+
+.nav {
+    display: flex;
     justify-content: space-around;
-    border: 3px solid black
+    align-items: center;
+    list-style: none;
+    border: 3px solid black;
+    margin: 0;
+    padding: 30px;
 }
-.grid2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap:10px;
-    column-gap:10px;
-    grid-template-areas: page-header page-header page-header grid grid grid article1 article2 article3 article4 article5;
+
+.section {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Futura";
+    color: #666;
 }
+
+.section :hover {
+    text-decoration: underline;
+}
+
+/* I am still not getting my navigation part right. they're not supposed to be joined together!*/
+
+
+
