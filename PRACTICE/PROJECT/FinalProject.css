@@ -62,3 +62,92 @@ header {
     display: grid;
     grid-template-areas: "second-quantity second-item second-amount";
 }
+
+.second-order-spec1 {
+    display:flex;
+    margin-top: -10px;
+    flex-direction: row-reverse;
+    margin
+}
+
+.third-quantity {
+    grid-area: third-quantity;
+}
+
+.third-item {
+    grid-area: third-item;
+}
+
+.third-amount {
+    grid-area: third-amount;
+}
+
+.items3 {
+    display:grid;
+    grid-template-areas: "third-quantity third-item third-amount";
+}
+
+.third-order-spec {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: -10px;
+}
+
+.items{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: beige;
+}
+   
+
+.name {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: beige;
+    float: right;
+}
+
+.payment {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: beige;
+    
+}
+
+.sub-total {
+    grid-area: sub-total;
+}
+
+.subtotal-amount {
+    grid-area: subtotal-amount;
+}
+
+.tax-text {
+    grid-area: tax-text;
+}
+
+.tax-amount {
+    grid-area: tax-amount;
+}
+
+.total-text {
+    grid-area: total-text;
+}
+
+.total-amount {
+    grid-area: total-amount;
+}
+
+.bottom-texts {
+    grid-template-areas: "sub-total subtotal-amount"
+    "tax-text tax-amount"
+    "total-text total-amount";
+}
+
+
+footer {
+    border-radius: 10px;
+    background-color: #6F4E37 ;
+    padding: 1px;
+    color: #ffffff;
+    display: grid;
+    justify-content: center;
+
+}

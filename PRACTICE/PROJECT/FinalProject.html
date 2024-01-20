@@ -25,8 +25,8 @@
            <p class="second-quantity">1x</p>
            <h2 class="second-item">Cappuccino</h2>
            <h2 class="second-amount">$3.85</h2>
-           <p class="second-order-spec">Lite milk</p>
-           <p class="second-order-spec">Double espresso</p>
+           <p class="second-order-spec1">Lite milk</p>
+           <p class="second-order-spec2">Double espresso</p>
        </nav>
        <nav class="items3">
            <p class="third-quantity">1x</p>
@@ -37,13 +37,76 @@
    </div>
    <div class="name">
        <h1 class="the-name-text">NAME</h1>
-           <p class="name-input-border">Name for order</p>
+           <label for="name-input" class="name-input-border">Name for order</label>
+           <input id="name-input" class="name-text-input" placeholder="type in name" />
    </div>
+   <style>
+    .name {
+        position: relative;
+        display:inline-block;
+    }
+
+    .name-text-input {
+        border-color: orangered;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    .name-input-border {
+        background-color: beige;
+        color: orangered;
+        font-size: 11px;
+        position: absolute;
+        left: 25px;
+        /* top: -7px; */
+        padding: 0 2px;
+    }
+   </style>
    <div class="payment">
        <h1 class="the-payment-text">PAYMENT</h1>
-       <p class="card-text">Card number</p>
-       <p class="ccv-text">CCV Number</p>
+       <label for="card-number-label" class="card-text">Card number</label>
+       <input id="card-number" class="card-number-class" placeholder="type in card number" />
+       <label for="ccv-number-label" class="ccv-number-class">CCV Number</label>
+       <input id="ccv-number" class="ccv-text" placeholder="type in ccv number"/>
    </div>
+   <style>
+    .payment {
+        position: relative;
+        display:inline-block;
+    }
+
+    .card-number-class {
+        border-color: orangered;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    .card-text {
+        background-color: beige;
+        color: orangered;
+        font-size: 11px;
+        position: absolute;
+        left: 25px;
+        /* top: -7px; */
+        padding: 0 2px;
+    }
+
+    .ccv-text {
+        border-color: orangered;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    .ccv-number-class {
+        background-color: beige;
+        color: orangered;
+        font-size: 11px;
+        position: absolute;
+        left: 25px;
+        top: -7px;
+        padding: 0 2px; 
+    }
+   </style>
    <div class="bottom-texts">
        <h2 class="sub-total">Subtotal:</h2>
        <h2 class="subtotal-amount">$9.65</h2>
