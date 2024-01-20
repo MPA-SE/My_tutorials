@@ -1,0 +1,64 @@
+.logo {
+    grid-area: logo;
+    background-color: #6F4E37;
+    width: 50px;
+    height: auto;
+
+}
+
+.brand-name {
+    grid-area: brand-name;
+}
+
+.brand {
+    display:grid;
+    grid-template-areas: "logo brand-name";
+    align-items: center;
+}
+
+header {
+    border-radius: 10px;
+    background-color: #6F4E37 ;
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.brand {
+    display:flex;
+    justify-content: center;
+}
+
+.first-quantity {
+    grid-area: first-quantity;
+}
+
+.first-item {
+    grid-area: first-item;
+}
+
+.first-amount {
+    grid-area: first-amount;
+}
+
+.items1 {
+    display:grid;
+    grid-template-areas: "first-quantity first-item first-amount";
+}
+
+.second-quantity {
+    grid-area: second-quantity;
+}
+
+.second-item {
+    grid-area: second-item;
+}
+
+.second-amount {
+    grid-area: second-amount;
+}
+
+.items2 {
+    display: grid;
+    grid-template-areas: "second-quantity second-item second-amount";
+}
