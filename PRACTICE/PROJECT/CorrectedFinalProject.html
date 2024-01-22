@@ -13,26 +13,84 @@
         <h1 class="brand-name">Coffee Masters</h1>
     </header>
     <section class="body">
-        <h1>ITEMS</h1>
-        <ul>
-            <li>1x</li>
-            <li><b>Cappuccino</b></li>
-            <li><b>$3.35</b></li>
-            <li>Lite foam</li>
-            <li>1x</li>
-            <li><b>Cappuccino</b></li>
-            <li><b>$3.85</b></li>
-            <li>Lite milk</li>
-            <li>Double espresso</li>
-            <li>1x</li>
-            <li><b>Cappuccino</b></li>
-            <li><b>$2.45</b></li>
-            <li>Butter</li>
+        <h1 class="first box">ITEMS</h1>
+        <ul class="items box">
+            <li class="item">
+            <div class="item-quantity">1x</div>
+            <div class="item-order"><b>Cappuccino</b></div>
+            <div class="item-price"><b>$3.35</b></div>
+            <ul class="item-options-list">
+                <li>Lite foam</li>
+            </ul>
+            </li>
+            <li class="item">
+                <div class="item-quantity">1x</div>
+                <div class="item-order"><b>Cappuccino</b></div>
+                <div class="item-price"><b>$3.85</b></div>
+                <ul class="item-options-list">
+                    <li>Lite milk</li>
+                    <li>Double espresso</li>
+                </ul>
+            </li>
+            <li class="item">
+                <div class="item-quantity">1x</div>
+                <div class="item-order"><b>Croissant</b></div>
+                <div class="item-price"><b>$2.45</b></div>
+                <ul class="item-options-list">
+                    <li>Butter</li>
+                </ul>
+            </li>
         </ul>
-        <div class="right-boxes">
-            <h1>NAME</h1>
-            <label></label>
+        <div class="right box">
+            <h1 class="name box">NAME</h1>
+            <label for="name" class="name-label">Name for order</label>
+            <input id="name" class="name-input" placeholder="type your name">
+            <h1 class="payment box">PAYMENT</h1>
+            <label for="card-number" class="card-label">Card number</label>
+            <input id="card-number" class="card-number-label" placeholder="enter card number">
+            <label for="ccv" class="ccv-label">CCV Number</label>
+            <input id="ccv" class="ccv-input" placeholder="enter ccv number">
+            <style>
+                .right {
+                    position: relative;
+                    display: inline-block;
+                }
+
+                .name-input {
+                    border-color: orangered;
+                    padding: 10px;
+                    border-radius: 100px;
+                }
+
+                .name-label {
+                    color: orangered;
+                    background-color: white;
+                    font-size:11px;
+                    position: absolute;
+                    left: 25px;
+                }
+            </style>
+
         </div>
+        <div class="total-table"></div>
+        <table>
+           <tbody>
+            <tr>
+                <td>Subtotal:</td>
+                <td>$9.65</td>
+            </tr>
+            <tr>
+                <td>Tax:</td>
+                <td>$0.82</td>
+            </tr>
+            <tr>
+                <td><b>Total:</b></td>
+                <td><b>$10.47</b></td>
+            </tr>
+           </tbody>
+        </table>
+        <button>Place order</button>
+
 
     </section>
 </body>
