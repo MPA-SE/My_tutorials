@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <title>QR Code Generator</title>
+</head>
+<body>
+    <div id="qrcode"></div>
+
+    <script>
+        // Generate a QR code
+        var link = 'https://forms.gle/MiiPrqNQjqZ7xU52A';
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: link,
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
