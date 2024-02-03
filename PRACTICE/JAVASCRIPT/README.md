@@ -4,4 +4,9 @@ SOME NOTES ON JS:
 - "Camel casing" is how everyone writes variable names in JavaScript. For example: const Jansalary
 - The semi-colon at the end of lines of codes that are important, like in CSS, are optional in JS.
 - There is something called REPL[Read Eval Print Loop], it just let's you interact directly with your codes, right in your browser. Go to INSPECT, then CONSOLE. Or < opt command i> on Macbook. And <ctrl shift i> on WINDOWS.
+- The backtick helps us concatenate without having to use plus signs and air quotes(for spaces in between) instaed with dollar signs and curly braces.
+- Booleans are useful for conditions that are like light switches, e.g if light switch is on(true) and off(false)...
+    let IsLightOn = true
+- Numbers are numbers in JS. No need to differentiate an integer from a float, etc.
+- CONTROL FLOW: IF statements - variables are assigned by one =. three === is the mathematical equal to...and <= and >= and !=... It is then followed by an else. There is an ELSE if statement for multiple scenarios - to help you cover everything. The funny thing is, when there are unexpected/unaccounted for inputs, that how bugs come in. lol.
 
