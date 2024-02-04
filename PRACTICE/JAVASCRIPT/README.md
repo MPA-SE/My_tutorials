@@ -4,5 +4,4 @@ SOME NOTES ON JS:
 - "Camel casing" is how everyone writes variable names in JavaScript. For example: const Jansalary
 - The semi-colon at the end of lines of codes that are important, like in CSS, are optional in JS.
 - There is something called REPL[Read Eval Print Loop], it just let's you interact directly with your codes, right in your browser. Go to INSPECT, then CONSOLE. Or < opt command i> on Macbook. And <ctrl shift i> on WINDOWS.
-- Shock alert: apart from using single/double quotes for string of characters, you can use a backtick too! And the sweet thing about them is that it is only with them that you can put in multiple lines of text!
 
