@@ -20,4 +20,13 @@ SOME NOTES ON JS:
 
 
 - N.B : Even when it has no parameters, the parenthesis should be there.
-- SCOPE: Variables are only in scope, when they are within the curly braces of the function. If you try to do anything with the variable after the closing brace, the error will be "...is not defined", because it's out of scope. This happens with CONST and LET, but the scoping in VAR is a little different.
+- SCOPE: Variables are only in scope, when they are within the curly braces of the function. If you try to do anything with the variable after the closing brace, the error will be "...is not defined", because it's out of scope. This happens with CONST and LET, but the scoping in VAR is a little different. So what matters, is where it was created.
+- BUILTIN FUNCTIONS. They are also called METHODS. Use "." So how does this work? Store it all in the variable. VS code will subject the methods/functions that can go with the object just after the dot. There are different objects that go with methods/functions. For example, the STRING object for strings, the MATH object. The INCLUDE method is really cool. It helps you know what strings are contained in other strings.
+- OBJECTS: Now in talking about objects proper, they contain properties, in curly braces. For example: const person = { name: "Priscilla", sex: "female",}; So if I console.log(person), all of these properties will be displayed. If I console.log(name), only priscilla will be displayed. Name, sex are called keys. And what they contain are called values.
+Values are not unique. Keys are. And variables can be used as accessors thus: const studentID  = 'name'; Now when I console.log(person[studentID]); It will display priscilla. Objects can have functions in them! Objects can nest objects.
+- CONTEXT: "this" indicates the current object. understand context. it can matter in interviews...how codes can be bent or broken.
+.bind(), can change the context.
+- ARRAYS: While objects are unordered lists. Arrays are ordered. You can have arrays of strings, numbers, arrays, numbers&strings. in square brackets. the length method will give how many items, counting from 1. The join() builtin permits us to put something or nothing in between thd items. the push method will add an item. The pop will take out the last item. Shift takes out the first item. Unshift does what shift does.
+
+**PUTTING IT ALL TOGETHER**
+- document.querySelector(".the_class_name"); this is the way to go! Then define what you want to do to the element...the_class_name.backgroundColor = pink; The style object helps effect more things like width, etc
