@@ -29,4 +29,9 @@ Values are not unique. Keys are. And variables can be used as accessors thus: co
 - ARRAYS: While objects are unordered lists. Arrays are ordered. You can have arrays of strings, numbers, arrays, numbers&strings. in square brackets. the length method will give how many items, counting from 1. The join() builtin permits us to put something or nothing in between thd items. the push method will add an item. The pop will take out the last item. Shift takes out the first item. Unshift does what shift does.
 
 **PUTTING IT ALL TOGETHER**
-- document.querySelector(".the_class_name"); this is the way to go! Then define what you want to do to the element...the_class_name.backgroundColor = pink; The style object helps effect more things like width, etc
+- document.querySelector(".the_class_name"); this is the way to go! And querySelectorAll works with all instances that have that class. Then define what you want to do to the element...the_class_name.backgroundColor = pink; The style object helps effect more things like width, etc Then there's ClassList. With .add('new_class'), I can add a new class. 
+Also all the css elements with hyphens in between, will be written in camel casing in js.
+You can as well create HTMl elements, append things and even remove - with just .remove - from the DOM (Document Object Model). Just use .innerHTL
+$0 will show you the last thing you worked on. then you can assign it a new value and start working with it from henceforth as that value.
+# CONTINUED IN THE .js and .html
+N.B: There are certain key interview questions for junior devs like: Event delegation or event bubbling, context.
