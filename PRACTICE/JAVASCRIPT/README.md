@@ -33,5 +33,33 @@ Values are not unique. Keys are. And variables can be used as accessors thus: co
 Also all the css elements with hyphens in between, will be written in camel casing in js.
 You can as well create HTMl elements, append things and even remove - with just .remove - from the DOM (Document Object Model). Just use .innerHTL
 $0 will show you the last thing you worked on. then you can assign it a new value and start working with it from henceforth as that value.
+
+Types
+
+A brief note on what is called types in JavaScript. We've danced the idea already and I want to make it a little more concrete for you. Strings, booleans, objects, arrays, numbers, these are different types of types (lol). JavaScript is a language where you don't have to concern yourself a lot with types since it doesn't strictly enforce them (other languages do) but in this problem you are definitely going to have to deal with it.
+
+Whatever you put into the DOM and whatever you get out it are going to strings, every time. If I do:
+10
+
+const num = 10;
+
+const div = document.querySelector(".number-target"); // the div right above this block
+
+console.log(num, typeof num); // this is a number here
+
+div.innerText = num;
+
+console.log(div.innerText, typeof div.innerText); // it's a string here
+
+10 "number"
+
+"10" "string"
+
+undefined
+
+Since you're doing math here, you'll need the numbers to actually be of the number type. Otherwise you'll get "5" + "5" = "55". There's a function called parseInt(string) that will turn a string of a number ("5") to a number (5).
+
+You'll also see that we used the typeof operator. typeof tells whatever the type of the thing that comes right after it is. This is useful to quickly see what's happening in your code. Be careful because typeof is not always useful, but it is useful for telling numbers and strings apart.
+
 # CONTINUED IN THE .js and .html
 N.B: There are certain key interview questions for junior devs like: Event delegation or event bubbling, context.
