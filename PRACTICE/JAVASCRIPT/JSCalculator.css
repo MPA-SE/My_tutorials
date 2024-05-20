@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    width: 24.5%;
+    justify-content: space-between;
+    margin-bottom: .5%;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #43281c;
+    color: #fbf2c0;
+    font-size: 16px;
+    font-weight: normal;
+}
+.cancel {
+    grid-area: cancel;
+    background-color: #d8d9db  ;
+}
+
+.back {
+    grid-area: back;
+    background-color: #d8d9db  ;
+}
+
+.division {
+    grid-area: division;
+    background-color: #df974c;
+}
+
+.seven {
+    grid-area: seven;
+    background-color: #d8d9db  ;
+}
+
+.eight {
+    grid-area: eight;
+    background-color: #d8d9db  ;
+}
+
+.nine {
+    grid-area: nine;
+    background-color: #d8d9db  ;
+}
+
+.multiplication {
+    grid-area: multiplication;
+    background-color: #df974c;
+}
+
+.four {
+    grid-area: four;
+    background-color: #d8d9db  ;
+}
+
+.five {
+    grid-area: five;
+    background-color: #d8d9db  ;
+}
+
+.six {
+    grid-area: six;
+    background-color: #d8d9db  ;
+}
+
+.subtraction {
+    grid-area: subtraction;
+    background-color: #df974c;
+}
+
+.one {
+    grid-area: one;
+    background-color: #d8d9db  ;
+}
+
+.two {
+    grid-area: two;
+    background-color: #d8d9db  ;
+}
+
+.three {
+    grid-area: three;
+    background-color: #d8d9db  ;
+}
+
+.addition {
+    grid-area: addition;
+    background-color: #df974c;
+}
+
+.zero {
+    grid-area: zero;
+    background-color: #d8d9db  ;
+}
+
+.equals {
+    grid-area: equals;
+    background-color: #df974c;
+}
+
+/*body {
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-areas: 
+    "cancel cancel back division"
+    "seven eight nine multiplication"
+    "four five six subtraction"
+    "one two three addition"
+    "zero zero zero equals";
+}*/

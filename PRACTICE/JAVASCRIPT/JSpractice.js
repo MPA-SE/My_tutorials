@@ -16,8 +16,8 @@ console.log(final);
     building for mobiles* So the addEventListener method takes two parameters:
     the event to listen for and the callback function with what you want it to carry out. */
 
-const react = document.querySelector(".first-event");
-react.addEventListener("Click", function () {
+const FirstEvent = document.querySelector(".first-event");
+FirstEvent.addEventListener("click", function () {
     alert("Coucou!"); //for some strange reason, this has stopped
 });
 
@@ -48,4 +48,4 @@ document
     .querySelector(".the-buttons")
     .addEventListener("click", function (event) {
     alert(`You clicked on button ${event.target.innerText}`);
- }); //THIS IS NOT WORKING! WHY?!
+ }); //THIS IS NOT WORKING! WHY?! 
